@@ -1,56 +1,86 @@
 <!DOCTYPE html>
-<html lang="uz">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trend Mini App</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <main class="app-shell">
-      <section class="phone-frame">
-        <div class="status-bar">
-          <span>9:41</span>
-          <span>📶 🔋</span>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Love App - Premium Edition</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="preloader">
+        <div class="preloader-heart">
+            <div></div>
         </div>
+        <p class="loading-text">Preparing something magical...</p>
+    </div>
 
-        <div class="screen">
-          <div id="sparkles" class="sparkles"></div>
+    <div class="animated-bg"></div>
+    <div class="particle-container" id="particleContainer"></div>
+    <div class="cursor-trail" id="cursorTrail"></div>
 
-          <div id="introCard" class="card active">
-            <div class="avatar">💌</div>
-            <h1>Only For N💖</h1>
-            <p>Turli Savollar Orqali Siz Sevishingizni Isbotlang.</p>
-            <button id="startBtn" class="cta">Ochish</button>
-          </div>
+    <div class="music-control">
+        <button id="muteBtn" class="mute-btn" aria-label="Toggle Music">
+            <svg id="musicOnIcon" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="currentColor" d="M14,3.23V5.29C16.89,6.15 19,8.83 19,12C19,15.17 16.89,17.85 14,18.71V20.77C18.01,19.86 21,16.28 21,12C21,7.72 18.01,4.14 14,3.23M16.5,12C16.5,10.23 15.5,8.71 14,7.97V16C15.5,15.29 16.5,13.77 16.5,12M3,9V15H7L12,20V4L7,9H3Z" />
+            </svg>
+            <svg id="musicMutedIcon" viewBox="0 0 24 24" width="24" height="24" class="hidden">
+                <path fill="currentColor" d="M12,4L7,9H3V15H7L12,20V4M16.5,12A4.5,4.5 0 0,0 14,7.97V10.18L16.45,12.63C16.48,12.42 16.5,12.21 16.5,12M19,12C19,13.17 18.72,14.28 18.24,15.27L19.78,16.81C20.56,15.39 21,13.75 21,12C21,7.72 18.01,4.14 14,3.23V5.29C16.89,6.15 19,8.83 19,12M4.27,3L3,4.27L7.73,9H3V15H7L12,20V13.27L16.25,17.53C15.58,18.04 14.83,18.44 14,18.71V20.77C15.38,20.44 16.63,19.79 17.67,18.94L20.73,22L22,20.73L4.27,3Z" />
+            </svg>
+        </button>
+        <audio id="bgMusic" loop preload="auto">
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        </audio>
+    </div>
 
-          <div id="gameCard" class="card hidden">
-            <div class="top-row">
-              <span id="stageLabel" class="stage-pill">1/4</span>
-              <span id="moodBadge" class="mood-pill">💖 0</span>
+    <div id="toastContainer" class="toast-container"></div>
+
+    <main class="app-card" id="appCard">
+        
+        <div id="quizSection">
+            <div class="quiz-header">
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+                <div class="counter-display" id="counterDisplay">Question 1 of 30</div>
             </div>
 
-            <div class="progress">
-              <div id="progressFill" class="progress-fill"></div>
+            <div class="quiz-body">
+                <div class="emoji-wrapper" id="emojiWrapper">❤️</div>
+                <h2 class="question-text" id="questionText"></h2>
             </div>
 
-            <div id="character" class="character">😊</div>
-            <div id="messageBox" class="message-box"></div>
-            <div id="options" class="options"></div>
-            <div id="miniHint" class="hint">Yana bir urinish — va sahna yanada qiziydi.</div>
-          </div>
-
-          <div id="resultCard" class="card hidden">
-            <div id="resultEmoji" class="avatar">✨</div>
-            <h2 id="resultTitle">Tugadi</h2>
-            <p id="resultText">Yana bir marotaba boshlash mumkin.</p>
-            <button id="secondaryBtn" class="ghost-btn hidden">Yana bir variant</button>
-            <button id="resetBtn" class="cta">Qayta boshlash</button>
-          </div>
+            <div class="quiz-footer" id="quizFooter">
+                <button class="btn btn-yes" id="yesBtn">
+                    <span>YES!</span>
+                    <div class="btn-glow"></div>
+                </button>
+                <button class="btn btn-no" id="noBtn">
+                    <span>NO</span>
+                </button>
+            </div>
         </div>
-      </section>
+
+        <div id="finalSection" class="hidden">
+            <div class="final-container">
+                <div class="huge-heart-wrapper">
+                    <div class="huge-heart">❤️</div>
+                    <div class="heart-pulse-glow"></div>
+                </div>
+                <h1 class="final-title">I knew you love me ❤️</h1>
+                <p class="final-subtitle">My heart is and always will be yours forever.</p>
+                <button class="btn btn-yes" id="playAgainBtn">
+                    <span>Play Again</span>
+                    <div class="btn-glow"></div>
+                </button>
+            </div>
+        </div>
+
     </main>
 
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
