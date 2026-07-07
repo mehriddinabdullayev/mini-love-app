@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Love App - Premium Edition</title>
+    <title>Mini Love App - Premium Nashr</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
@@ -11,19 +11,22 @@
 </head>
 <body>
 
+    <!-- Yuklanish Ekran (Preloader) -->
     <div id="preloader">
         <div class="preloader-heart">
             <div></div>
         </div>
-        <p class="loading-text">Preparing something magical...</p>
+        <p class="loading-text">Sehrli lahzalar tayyorlanmoqda...</p>
     </div>
 
+    <!-- Orqa Fon Elementlari -->
     <div class="animated-bg"></div>
     <div class="particle-container" id="particleContainer"></div>
     <div class="cursor-trail" id="cursorTrail"></div>
 
+    <!-- Musiqa Pleyeri -->
     <div class="music-control">
-        <button id="muteBtn" class="mute-btn" aria-label="Toggle Music">
+        <button id="muteBtn" class="mute-btn" aria-label="Musiqani yoqish/o'chirish">
             <svg id="musicOnIcon" viewBox="0 0 24 24" width="24" height="24">
                 <path fill="currentColor" d="M14,3.23V5.29C16.89,6.15 19,8.83 19,12C19,15.17 16.89,17.85 14,18.71V20.77C18.01,19.86 21,16.28 21,12C21,7.72 18.01,4.14 14,3.23M16.5,12C16.5,10.23 15.5,8.71 14,7.97V16C15.5,15.29 16.5,13.77 16.5,12M3,9V15H7L12,20V4L7,9H3Z" />
             </svg>
@@ -36,44 +39,51 @@
         </audio>
     </div>
 
+    <!-- Bildirishnomalar (Toast) Konteyneri -->
     <div id="toastContainer" class="toast-container"></div>
 
+    <!-- Asosiy Karta (Card) -->
     <main class="app-card" id="appCard">
         
+        <!-- Savol-javob bo'limi -->
         <div id="quizSection">
+            <!-- Progress Bar va hisoblagich -->
             <div class="quiz-header">
                 <div class="progress-container">
                     <div class="progress-bar" id="progressBar"></div>
                 </div>
-                <div class="counter-display" id="counterDisplay">Question 1 of 30</div>
+                <div class="counter-display" id="counterDisplay">1-savol, jami 30 ta</div>
             </div>
 
+            <!-- Savol matni va emoji -->
             <div class="quiz-body">
                 <div class="emoji-wrapper" id="emojiWrapper">❤️</div>
                 <h2 class="question-text" id="questionText"></h2>
             </div>
 
+            <!-- Tugmalar -->
             <div class="quiz-footer" id="quizFooter">
                 <button class="btn btn-yes" id="yesBtn">
-                    <span>YES!</span>
+                    <span>HA!</span>
                     <div class="btn-glow"></div>
                 </button>
                 <button class="btn btn-no" id="noBtn">
-                    <span>NO</span>
+                    <span>YO'Q</span>
                 </button>
             </div>
         </div>
 
+        <!-- Yakuniy g'alaba ekrani -->
         <div id="finalSection" class="hidden">
             <div class="final-container">
                 <div class="huge-heart-wrapper">
                     <div class="huge-heart">❤️</div>
                     <div class="heart-pulse-glow"></div>
                 </div>
-                <h1 class="final-title">I knew you love me ❤️</h1>
-                <p class="final-subtitle">My heart is and always will be yours forever.</p>
+                <h1 class="final-title">Meni sevishingizni bilardim! ❤️</h1>
+                <p class="final-subtitle">Yuragim abadiy sizniki va shunday bo'lib qoladi.</p>
                 <button class="btn btn-yes" id="playAgainBtn">
-                    <span>Play Again</span>
+                    <span>Yana o'ynash</span>
                     <div class="btn-glow"></div>
                 </button>
             </div>

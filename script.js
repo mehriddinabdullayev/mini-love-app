@@ -1,43 +1,43 @@
 /**
  * ==========================================================================
- * PREMIUM ROMANTIC QUIZ SYSTEM - COMPLETE LOGIC
+ * PREMIUM ROMANTIC QUIZ SYSTEM - COMPLETE LOGIC (UZBEK EDITION)
  * ==========================================================================
  */
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    // 30 Completely Unique Premium Romantic Love Questions Matrix
+    // 30 Completely Unique Premium Romantic Love Questions Matrix in Uzbek
     const loveQuestions = [
-        { id: 1, emoji: "❤️", text: "Do you really love me with all your heart?", response: "I knew your heart belonged to me! 😍" },
-        { id: 2, emoji: "♾️", text: "Would you stay with me through eternity?", response: "Forever isn't even long enough! ♾️" },
-        { id: 3, emoji: "🤝", text: "Will you hold my hand tightly in public places?", response: "Proudly holding hands, walking through life! 👫" },
-        { id: 4, emoji: "🫂", text: "Would you hug me tight when I feel completely lost?", response: "Your arms are my absolute safest haven! 🥺" },
-        { id: 5, emoji: "🌧️", text: "Would you dance with me under a beautiful midnight rain?", response: "Splashing through drops of pure romantic magic! 💃" },
-        { id: 6, emoji: "🍕", text: "Would you willingly share your very last slice of pizza with me?", response: "Now THAT is true deeper level connection! 🍕" },
-        { id: 7, emoji: "🌇", text: "Will you commit to watching the sunset with me every week?", response: "Painting memories into the beautiful evening sky! 🌅" },
-        { id: 8, emoji: "🧓", text: "Would you love to grow old and wrinkled right next to me?", response: "Rocking chairs, silver hair, and infinite devotion! 👵" },
-        { id: 9, emoji: "🌍", text: "Would you travel to the ends of the world by my side?", response: "Every corner of Earth is better with you! 🗺️" },
-        { id: 10, emoji: "🥰", text: "Am I truly your absolute favorite person in existence?", response: "And you are my entire beautiful universe! ✨" },
-        { id: 11, emoji: "🍳", text: "Would you surprise cook for me when I come home exhausted?", response: "Breakfast, dinner, and love served daily! 🥞" },
-        { id: 12, emoji: "💓", text: "Do I still make your heart race like crazy every single day?", response: "Thump-thump! That's the rhythm of pure romance! 🥁" },
-        { id: 13, emoji: "🌌", text: "Would you stay up to stargaze on a cold winter night with me?", response: "Counting constellations while warm in your love! 🔭" },
-        { id: 14, emoji: "✉️", text: "Would you write me old-fashioned poetic love letters?", response: "Ink on paper, parsing out my soul for you! ✍️" },
-        { id: 15, emoji: "☀️", text: "Would you wake up early just to kiss my forehead softly?", response: "The absolute brightest way to greet any morning! ☀️" },
-        { id: 16, emoji: "🔮", text: "Do you clearly see me present in all your future plans?", response: "Destiny has woven our lives into one fabric! 🧵" },
-        { id: 17, emoji: "💋", text: "Would you kiss me right in the middle of a sentence?", response: "Action speaks louder than any beautiful words! 🤫" },
-        { id: 18, emoji: "💐", text: "Would you bring me flowers for absolutely no specific reason?", response: "Blossoming romance without any calendar rules! 🌹" },
-        { id: 19, emoji: "💭", text: "Am I the sweetest dream you think of before sleeping?", response: "Drifting to sleep wrapped inside thoughts of you! 🛌" },
-        { id: 20, emoji: "🛡️", text: "Would you stand and defend me against the entire world?", response: "Unbreakable armor, standing strong together! ⚔️" },
-        { id: 21, emoji: "🎤", text: "Would you sing a horribly cheesy love song explicitly to me?", response: "Serenading with absolute beautiful affection! 🎶" },
-        { id: 22, emoji: "😊", text: "Do you unconsciously smile whenever your phone lights up from me?", response: "A tiny notification that instantly brightens my life! 📱" },
-        { id: 23, emoji: "🍰", text: "Would you give me the larger piece of a delicious cake?", response: "Sweet desserts for the sweetest love of mine! 🍰" },
-        { id: 24, emoji: "🎬", text: "Will you hold me extra tight during intense scary movies?", response: "No monsters can touch us while we are entangled! 🧟" },
-        { id: 25, emoji: "✨", text: "Do you genuinely believe we were written in the stars?", response: "Cosmic alignment brought us right here today! ☄️" },
-        { id: 26, emoji: "🏰", text: "Would you build an epic secret blanket fort with me?", response: "A cozy secret kingdom for just the two of us! 🏰" },
-        { id: 27, emoji: "🦋", text: "Do you still get fluttery stomach butterflies when we meet?", response: "A beautiful wild zoo inside every single time! 🦋" },
-        { id: 28, emoji: "🗣️", text: "Would you patiently listen to my random endless daily rants?", response: "Your voice is my absolute favorite symphony! 🎹" },
-        { id: 29, emoji: "🌹", text: "Will you promise to be my forever and ever Valentine?", response: "Every single day is Feb 14th from now on! 💝" },
-        { id: 30, emoji: "💍", text: "Will you lock your hand in mine and promise eternal love?", response: "An ironclad promise of complete infinite devotion! 🔒" }
+        { id: 1, emoji: "❤️", text: "Meni butun qalbingiz bilan chin dildan sevasizmi?", response: "Qalbingiz faqat meniki ekanligini bilardim! 😍" },
+        { id: 2, emoji: "♾️", text: "Men bilan abadiyatgacha birga bo'la olasizmi?", response: "Abadiyat ham bizning sevgimizga kamlik qiladi! ♾️" },
+        { id: 3, emoji: "🤝", text: "Odamlar orasida ham qo'limdan mahkam tutib yurasizmi?", response: "Qo'llarimiz hayot yo'lida hamisha birga! 👫" },
+        { id: 4, emoji: "🫂", text: "O'zimni yomon his qilganimda meni mahkam bag'ringizga bosasizmi?", response: "Sizning quchog'ingiz men uchun eng xavfsiz joy! 🥺" },
+        { id: 5, emoji: "🌧️", text: "Tungi yomg'ir ostida men bilan raqsga tusharmidingiz?", response: "Yomg'ir tomchilari ostidagi eng sehrli lahzalar! 💃" },
+        { id: 6, emoji: "🍕", text: "Pitsaning eng oxirgi shirin bo'lagini menga ilinasizmi?", response: "Mana buni haqiqiy olijanob sevgi desa bo'ladi! 🍕" },
+        { id: 7, emoji: "🌇", text: "Har hafta men bilan quyosh botishini tomosha qilasizmi?", response: "Kechki osmon bag'rida shirin xotiralar chizamiz! 🌅" },
+        { id: 8, emoji: "🧓", text: "Men bilan birga qarib, bir yostiqqa bosh qo'yishni xohlaysizmi?", response: "Baxtli keksalik va tuganmas cheksiz mehr! 👵" },
+        { id: 9, emoji: "🌍", text: "Men bilan dunyoning chekkasiga bo'lsa ham sayohat qilasizmi?", response: "Siz bilan dunyoning har bir burchagi go'zal! 🗺️" },
+        { id: 10, emoji: "🥰", text: "Rostini ayting, men siz uchun dunyodagi eng qadrli insonmanmi?", response: "Siz esa mening butun go'zal koinotimsiz! ✨" },
+        { id: 11, emoji: "🍳", text: "Charchab kelganimda menga kutilmagan shirin taom tayyorlab berasizmi?", response: "Har kuni sevgi bilan pishirilgan lazzatli taomlar! 🥞" },
+        { id: 12, emoji: "💓", text: "Meni ko'rganingizda yuragingiz hamon tez urib ketadimi?", response: "Turs-turs! Bu bizning sevgimiz ritmi! 🥁" },
+        { id: 13, emoji: "🌌", text: "Sovuq qish tunida men bilan yulduzlarni tomosha qilarmidingiz?", response: "Sizning mehringiz bilan qishki tun ham issiq! 🔭" },
+        { id: 14, emoji: "✉️", text: "Menga eski davrlardagidek romantik sevgi maktublari yozasizmi?", response: "Qog'ozdagi siyoh - qalbimning chin izhoridir! ✍️" },
+        { id: 15, emoji: "☀️", text: "Ertalab shunchaki peshonamdan o'pish uchun vaqtli uyg'onarmidingiz?", response: "Yangi kunni qarshilashning eng go'zal usuli! ☀️" },
+        { id: 16, emoji: "🔮", text: "Kelajakdagi barcha orzu va rejalaringizda meni ko'ryapsizmi?", response: "Taqdirimiz allaqachon bir butun bo'lib bog'langan! 🧵" },
+        { id: 17, emoji: "💋", text: "Gapirayotganimda to'satdan so'zimni o'pich bilan bo'larmidingiz?", response: "Harakatlar so'zlardan ko'ra sehrliroq va shirinroq! 🤫" },
+        { id: 18, emoji: "💐", text: "Menga hech qanday sababsiz, shunchaki gullar sovg'a qilasizmi?", response: "Kalendarsiz, shunchaki ko'ngil quvonchi uchun! 🌹" },
+        { id: 19, emoji: "💭", text: "Uxlashdan oldin o'ylaydigan eng shirin tushingiz menmanmi?", response: "Siz haqingizdagi shirin xayollar bilan uyquga ketaman! 🛌" },
+        { id: 20, emoji: "🛡️", text: "Butun dunyo bizga qarshi bo'lsa ham, meni himoya qilasizmi?", response: "Biz birga har qanday qiyinchilikni yenga olamiz! ⚔️" },
+        { id: 21, emoji: "🎤", text: "Faqat men uchun eng quvnoq va kulgili sevgi qo'shig'ini aytasizmi?", response: "Sizga bo'lgan cheksiz muhabbatim taronasi! 🎶" },
+        { id: 22, emoji: "😊", text: "Mendan xabar kelganda telefoningizga qarab beixtiyor jilmayasizmi?", response: "Ekrandagi mitti bildirishnoma ham kayfiyatni ko'taradi! 📱" },
+        { id: 23, emoji: "🍰", text: "Shirin tortning eng katta va mazali bo'lagini menga berasizmi?", response: "Mening eng shirin insonim uchun eng zo'r bo'lak! 🍰" },
+        { id: 24, emoji: "🎬", text: "Qo'rqinchli kino ko'rayotganda meni yanada mahkamroq ushlab turasizmi?", response: "Biz birga bo'lsak, hech qanday maxluq qo'rqinchli emas! 🧟" },
+        { id: 25, emoji: "✨", text: "Bizning uchrashganimiz yulduzlarda bitilganiga ishonasizmi?", response: "Koinot bizni birlashtirgani aslo tasodif emas! ☄️" },
+        { id: 26, emoji: "🏰", text: "Uyda adyollardan uycha yasab, ichida berkinib o'tirarmidik?", response: "Faqat ikkimizga tegishli bo'lgan sirli shirin qirollik! 🏰" },
+        { id: 27, emoji: "🦋", text: "Uchrashganimizda yuragingizda hamon kapalaklar uchadimi?", response: "Har safar xuddi birinchi uchrashuvdek hayajon! 🦋" },
+        { id: 28, emoji: "🗣️", text: "Mening tinimsiz va qiziq hayotiy gaplarimni charchamay tinglaysizmi?", response: "Sizning ovozingiz - men uchun eng go'zal simfoniya! 🎹" },
+        { id: 29, emoji: "🌹", text: "Umringizning oxirigacha mening yagona sevgilim bo'lishga va'da berasizmi?", response: "Endi hayotimizning har bir kuni haqiqiy sevgi bayrami! 💝" },
+        { id: 30, emoji: "💍", text: "Qo'llaringizni qo'llarimga qulflab, abadiy muhabbatga so'z berasizmi?", response: "Cheksiz sadoqat va abadiy baxt va'dasi! 🔒" }
     ];
 
     let currentQuestionIndex = 0;
@@ -72,13 +72,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Funny/Sweet Escape Messages for NO action attempts
     const noClickResponses = [
-        "Oops! Try again! 😉",
-        "Access Denied by Cupid! 🏹",
-        "Error: Heart does not compute this option! ❌",
-        "Nice try, swift clicker! 🏎️",
-        "That button is just decoration! 🎀",
-        "Your cursor missed the mark! 🎯",
-        "Love doesn't know NO! 💖"
+        "Voy! Yana bir bor urinib ko'ring! 😉",
+        "Kupidon bu javobga ruxsat bermadi! 🏹",
+        "Xatolik: Yurak bu variantni qabul qilmaydi! ❌",
+        "Yaxshi urinish, lekin chaqqonroq bo'lish kerak! 🏎️",
+        "Bu tugma shunchaki chiroy uchun qo'yilgan! 🎀",
+        "Sizning kursor nishonga aniq tegmadi! 🎯",
+        "Chin sevgida 'YO'Q' degan javob bo'lmaydi! 💖"
     ];
 
     /* ==========================================================================
@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 musicOnIcon.classList.remove('hidden');
                 musicMutedIcon.classList.add('hidden');
             }).catch(() => {
-                showToast("Please interact with the page first to allow music! 🎵");
+                showToast("Musiqa chalinishi uchun ekran ustiga bosing! 🎵");
             });
         } else {
             bgMusic.pause();
@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const activeData = loveQuestions[currentQuestionIndex];
         
         // Update Metadata displays
-        counterDisplay.innerText = `Question ${activeData.id} of ${totalQuestions}`;
+        counterDisplay.innerText = `${activeData.id}-savol, jami ${totalQuestions} tadan`;
         progressBar.style.width = `${(activeData.id / totalQuestions) * 100}%`;
         
         // Emoji bounce animation trigger
@@ -363,7 +363,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* ==========================================================================
        RESET APPLICATION STATE
-       ========================================================================== */
+       ========================================================================= */
 
     playAgainBtn.addEventListener('click', (e) => {
         createRipple(e, playAgainBtn);
