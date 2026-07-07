@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trend Mini App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="phone-frame">
+        <div class="status-bar">
+          <span>9:41</span>
+          <span>📶 🔋</span>
+        </div>
+
+        <div class="screen">
+          <div id="sparkles" class="sparkles"></div>
+
+          <div id="introCard" class="card active">
+            <div class="avatar">💌</div>
+            <h1>Only For N💖</h1>
+            <p>Turli Savollar Orqali Siz Sevishingizni Isbotlang.</p>
+            <button id="startBtn" class="cta">Ochish</button>
+          </div>
+
+          <div id="gameCard" class="card hidden">
+            <div class="top-row">
+              <span id="stageLabel" class="stage-pill">1/4</span>
+              <span id="moodBadge" class="mood-pill">💖 0</span>
+            </div>
+
+            <div class="progress">
+              <div id="progressFill" class="progress-fill"></div>
+            </div>
+
+            <div id="character" class="character">😊</div>
+            <div id="messageBox" class="message-box"></div>
+            <div id="options" class="options"></div>
+            <div id="miniHint" class="hint">Yana bir urinish — va sahna yanada qiziydi.</div>
+          </div>
+
+          <div id="resultCard" class="card hidden">
+            <div id="resultEmoji" class="avatar">✨</div>
+            <h2 id="resultTitle">Tugadi</h2>
+            <p id="resultText">Yana bir marotaba boshlash mumkin.</p>
+            <button id="secondaryBtn" class="ghost-btn hidden">Yana bir variant</button>
+            <button id="resetBtn" class="cta">Qayta boshlash</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

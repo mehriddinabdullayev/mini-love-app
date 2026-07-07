@@ -1,0 +1,13 @@
+{
+  "name": "trend-mini-app",
+  "version": "1.0.0",
+  "description": "Interactive love quiz mini app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
